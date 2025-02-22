@@ -1,0 +1,195 @@
+@import url("../CSS/variables.css");
+@import url("../CSS/site.css");
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  padding: 3rem 5vw;
+  gap: 3rem
+}
+
+/*LEFT-SIDE*/
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: .5rem 0;
+}
+.left-container > div > h3 {
+  color: var(--main-color-1);
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: normal;
+}
+.game-info {
+  background: var(--background-dark-3);
+  border-radius: 20px;
+  color: var(--gray-white);
+}
+.game-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--main-color-1);
+  margin: 0 10px;
+  padding: 0.5rem 0;
+}
+.game-players-box {
+  color: var(--gray-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  padding: 1.5rem 20px;
+}
+.game-players-box a {
+  color: var(--gray-white);
+  position: relative;
+}
+.game-players-box a:hover {
+  color: var(--main-hover-color-1);
+}
+.game-players-box a::before {
+  content: "";
+  font-size: 0;
+  border-radius: 50%;
+  border: 2px solid var(--gray-white);
+  width: .8rem;
+  height: .8rem;
+  left: -20px;
+  bottom: 6px;
+  position: absolute;
+}
+.game-players-box a:hover::before {
+  border: 2px solid var(--main-hover-color-1);
+}
+
+.game-chat {
+  background: var(--background-dark-3);
+  border-radius: 20px;
+}
+.game-chat-box {
+  border-top: 1px solid var(--main-color-1);
+  height: 14rem;
+  overflow-y: hidden;
+  margin: 0 10px;
+}
+.chat-input {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  width: 100%;
+  background: var(--background-gray-2);
+  outline: none;
+  border: none;
+  padding: 4px 20px;
+  color: var(--white-text-2);
+  border-top: 1px solid var(--gray-white);
+}
+.chat-input::placeholder {
+  color: var(--gray-white);
+}
+
+/*CENTER*/
+.center-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.center-container > img {
+  border-radius: inherit;
+}
+
+/*RIGHT-SIDE*/
+.right-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 95%;
+}
+
+.pieces-container {
+  border-radius: 15px;
+  background: var(--background-dark-1);
+  border: 1px solid var(--gray-white);
+  display: flex;
+  width: 80%;
+  padding: 4px 6px;
+
+  color: var(--gray-white);
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.right-game-container {
+  background: var(--background-dark-3);
+  border-radius: 20px;
+  margin: 1.5rem 0;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+}
+.time-right {
+  font-size: 2.5rem;
+  color: var(--white-text-1);
+  margin: 0 1vw;
+}
+.player-name-right {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--gray-white);
+}
+.player-name-right:hover {
+  color: var(--blue-link-hover);
+}
+.right-center-container {
+  border-bottom: 1px solid var(--white-header-text);
+  border-top: 1px solid var(--white-header-text);
+}
+.right-button-container {
+  display: flex;
+  justify-content: center;
+}
+.right-button-container > button {
+  background: var(--background-gray-3);
+  border-radius: 10px;
+  border: 1px solid var(--white-header-text);
+  margin: 0.8rem 1rem;
+  padding: 3px;
+  color: var(--white-header-text)
+}
+.right-button-container > button:hover {
+  color: var(--background-gray-1);
+  background: var(--white-header-text);
+}
+
+
+/*HISTORY-TABLE*/
+.history-table {
+  background: #323232;
+  color: var(--white-header-text);
+  font-family: 'RobotoThin', sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+.table-div {
+  overflow-y: scroll;
+  height: 85px;
+}
+.history-table th:not(:first-child) {
+  text-align: left;
+  width: 50%;
+  padding: 0 0 0 1rem;
+}
+.history-table th:not(:first-child):hover {
+  background: var(--blue-link-hover);
+  cursor: pointer;
+}
+.history-table tr:nth-child(2) th:nth-child(2) {
+  background: var(--background-blue);
+  font-family: 'RobotoLight', sans-serif;
+}
+.history-table th:first-child {
+  background: var(--background-gray-1);
+  padding: 0 1rem;
+}

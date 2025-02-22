@@ -1,0 +1,128 @@
+@import url("../CSS/variables.css");
+@import url("../CSS/reset.css");
+
+@font-face {
+  font-family: "MontserratAlt";
+  src: url("../Fonts/MontserratAlternates-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoThin";
+  src: url("../Fonts/Roboto-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*ALL DOCUMENT*/
+html {
+  font-size: var(--font-size);
+}
+a, button {
+  cursor: pointer;
+}
+body {
+  background-color: var(--background-dark-2);
+  background-image: url("../Img/BackgroundPieces.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 82%;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/*HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-dark-1);
+  border-bottom: 2px solid var(--main-color-1);
+  position: relative;
+  top: 0;
+  font-size: 1rem;
+  max-width: 1800px;
+  box-sizing: border-box;
+  margin: 0;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--margin-list);
+  align-self: stretch;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 1.5vw;
+}
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-list a {
+  padding: var(--margin-list-items);
+}
+
+.right-header > * {
+  margin: var(--margin-list-items);
+}
+.find-container {
+  display: flex;
+  background-color: var(--background-dark-3);
+  border-radius: 13px;
+  clip-path: fill-box;
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+}
+.find-container * {
+  background: transparent;
+  border: none;
+  color: var(--white-text-2);
+}
+.find-container > button {
+  padding: 0;
+}
+.find-input {
+  width: calc(40px + 11vw);
+  padding: 0 6px 0 0;
+}
+.find-icon {
+  margin: 6px 6px 4px 6px;
+  fill: var(--main-color-1);
+}
+.find-input::placeholder {
+  color: var(--white-low-text)
+}
+.user-profile {
+  align-items: center;
+}
+.user-profile > svg {
+  width: 2.4rem;
+}
+.user-name {
+  padding: var(--margin-list-items);
+}
+
+a {
+  color: var(--main-color-1);
+}
+a:hover {
+  color: var(--main-hover-color-1);
+}
+
+/*MAIN*/

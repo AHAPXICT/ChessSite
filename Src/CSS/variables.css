@@ -1,0 +1,21 @@
+:root {
+  --main-color-1: #F7CC57;
+  --main-hover-color-1: #F7E4AF;
+  --main-selected-color-1: #FFBB00;
+  --background-dark-1: #292929;
+  --background-dark-2: #303030;
+  --background-dark-3: #3F3F3F;
+  --background-gray-2: #4C4C4C;
+  --background-gray-1: #4A4A4A;
+  --background-gray-3: #565656;
+  --white-text-1: #E5E5E5;
+  --white-text-2: #FEFEFE;
+  --white-header-text: #EFEFEF;
+  --gray-white: #CBCBCB;
+  --white-low-text: rgb(200, 200, 200);
+  --blue-link-hover: hsl(209 79% 56%);
+  --background-blue: hsl(200 50% 22%);
+  --margin-list: calc(0.1vh + 0.1vw) calc(0.6vh + 0.6vw);
+  --margin-list-items: 0 0.4rem;
+  --font-size: 16px;
+}
