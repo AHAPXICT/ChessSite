@@ -1,0 +1,118 @@
+@import url("../CSS/variables.css");
+@import url("../CSS/site.css");
+
+.main {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.left-find-menu {
+  background: var(--background-dark-3);
+  border: 30px;
+  border-radius: 20px;
+  color: var(--white-text-1);
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+.left-menu-title {
+  grid-column: span 2;
+}
+.games-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  border-radius: 30px;
+  color: var(--white-text-1);
+  width: 100%;
+  margin: 20px 20px 20px 0;
+}
+
+.selected-game {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  justify-content: center;
+  background: var(--background-dark-3);
+  border-radius: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.selected-text-container {
+  display: grid;
+  grid-template-rows: 1.5fr 1.2fr 1fr 1fr;
+  gap: 20px;
+  align-self: stretch;
+  position: sticky;
+}
+
+.selected-game > * {
+  margin: 15px;
+}
+
+.board {
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.game-history {
+  background: var(--background-dark-2);
+}
+
+#selected-game-name {
+  font-size: 1.2rem;
+}
+
+.selected-game-status {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1vw;
+}
+
+.selected-game-player {
+  font-size: 1.1rem;
+}
+
+.win-rating {
+  color: var(--win-green);
+  font-size: 0.9rem;
+}
+
+.lose-rating {
+  color: var(--lose-red);
+  font-size: 0.9rem;
+}
+
+.player-rating {
+  color: var(--gray-white);
+  font-size: 0.9rem;
+}
+
+.selected-game-win {
+  justify-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.selected-game-time {
+  align-self: end;
+}
+
+.table-div {
+  height: 165px;
+}
+
+.right-container {
+  margin: 20px;
+}
+
+
+
+
+

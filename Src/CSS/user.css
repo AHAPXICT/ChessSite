@@ -1,0 +1,38 @@
+@import url("../CSS/variables.css");
+@import url("../CSS/site.css");
+
+:root {
+  --border-radius: 30px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.left-menu-container {
+  grid-row: span 2;
+  background: var(--background-dark-3);
+  border-radius: var(--border-radius);
+}
+
+
+
+.graph-container {
+  background: var(--background-dark-3);
+  border-radius: var(--border-radius);
+}
+.graph-setbar {
+  background: var(--background-dark-2);
+  border-radius: 20px;
+  border: 1px solid var(--white-text-1);
+}
+
+
+
+.user-container {
+  background: var(--background-dark-3);
+  border-radius: var(--border-radius);
+}

@@ -126,3 +126,99 @@ a:hover {
 }
 
 /*MAIN*/
+/*#region GameRightContainer*/
+.right-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 95%;
+}
+
+.pieces-container {
+  border-radius: 15px;
+  background: var(--background-dark-1);
+  border: 1px solid var(--gray-white);
+  display: flex;
+  width: 80%;
+  padding: 4px 6px;
+
+  color: var(--gray-white);
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.right-game-container {
+  background: var(--background-dark-3);
+  border-radius: 20px;
+  margin: 1.5rem 0;
+  border: 1px solid var(--white-text-1);
+}
+.right-header {
+  display: flex;
+  align-items: center;
+}
+.time-right {
+  font-size: 2.5rem;
+  color: var(--white-text-1);
+  margin: 0 1vw;
+}
+.player-name-right {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--gray-white);
+}
+.player-name-right:hover {
+  color: var(--blue-link-hover);
+}
+.right-center-container {
+  border-bottom: 1px solid var(--white-header-text);
+  border-top: 1px solid var(--white-header-text);
+}
+.right-button-container {
+  display: flex;
+  justify-content: center;
+}
+.right-button-container > button {
+  background: var(--background-gray-3);
+  border-radius: 10px;
+  border: 1px solid var(--white-header-text);
+  margin: 0.8rem 1rem;
+  padding: 3px;
+  color: var(--white-header-text)
+}
+.right-button-container > button:hover {
+  color: var(--background-gray-1);
+  background: var(--white-header-text);
+}
+
+
+/*HISTORY-TABLE*/
+.history-table {
+  background: #323232;
+  color: var(--white-header-text);
+  font-family: 'RobotoThin', sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+.table-div {
+  overflow-y: scroll;
+  height: 85px;
+}
+.history-table th:not(:first-child) {
+  text-align: left;
+  width: 50%;
+  padding: 0 0 0 1rem;
+}
+.history-table th:not(:first-child):hover {
+  background: var(--blue-link-hover);
+  cursor: pointer;
+}
+.history-table tr:nth-child(2) th:nth-child(2) {
+  background: var(--background-blue);
+  font-family: 'RobotoLight', sans-serif;
+}
+.history-table th:first-child {
+  background: var(--background-gray-1);
+  padding: 0 1rem;
+}
+/*#endregion RegionName*/
