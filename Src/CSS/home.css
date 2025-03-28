@@ -20,14 +20,14 @@ main {
   justify-content: end;
   margin: 0 2.4vw;
   align-self: center;
-  color: var(--white-header-text);
+  color: var(--white-text-2);
   align-items: center;
 }
 .news-sidebar > a {
   margin: 3vh 0;
 }
 .news-header {
-  color: var(--white-header-text);
+  color: var(--white-text-2);
   text-align: center;
   margin-top: 4vw;
   margin-bottom: -1vw;
@@ -43,13 +43,13 @@ main {
   overflow: clip;
 }
 .news-container * {
-  color: var(--white-header-text);
+  color: var(--white-text-2);
   font-size: 0.9rem;
   text-align: center;
   text-wrap: wrap;
 }
 .news-container img {
-  border-bottom: 1px solid var(--white-header-text);
+  border-bottom: 1px solid var(--white-text-2);
   display: block;
   max-width: 100%;
 }

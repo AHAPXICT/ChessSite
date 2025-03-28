@@ -46,30 +46,89 @@
     
     <main class="main">
       <aside class="left-menu-container">
-        <nav>
-          <ul>
-            <li><a href="">Шахматы</a></li>
-            <li><a href="">Шахматы 960</a></li>
-            <li><a href="">Туман войны</a></li>
-            <li><a href="">Своя игра</a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </nav>
+            <a class="selected-game-type" href="">Шахматы</a>
+            <div class="game-times">
+              <a href="">Bullet</a>
+              <a href="">Blitz</a>
+              <a href="">Rapid</a>
+              <a id="selected-time-control" href="">Long</a>
+            </div>
+            <a href="">Шахматы 960</a>
+            <a href="">Туман войны</a>
+            <a href="">Своя игра</a>
       </aside>
-      <div class="graph-container">
-        <div>UserName</div>
-        <div class="graph-container"></div>
+      <div class="games-info-container">
+        <div class="graph-container">
+          <div class="user-name-title">UserName</div>
+          <img class="graph-img" src="Src/Img/graphic.png" alt=""/>
+          <div class="graph-setbar"></div>
+          <span class="graph-start-date">12.10.2024</span>
+          <span class="graph-end-date">20.03.2025</span>
+        </div>
+        <div class="games-statistics-container">
+          <div>
+            <div>Всего партий</div>
+            <div>Побед</div>
+            <div>Поражений</div>
+            <div>Ничьих</div>
+            <div>Процент побед</div>
+          </div>
+          <div>
+            <div>100</div>
+            <div style="color: var(--win-green)">40</div>
+            <div style="color: var(--lose-red)">10</div>
+            <div style="color: var(--white-low-text)">50</div>
+            <div style="color: var(--win-green)">40%</div>
+          </div>
+        </div>
       </div>
       <div class="user-container">
-        <div>
-        
+        <div class="user-info">
+          <div>Зарегистрирован</div>
+          <div>На сайте</div>
+          <div>Самый частый противник</div>
+          <div>12 октября 2024</div>
+          <div>5 месяцев 6 дней</div>
+          <div>Player2, 12 игр</div>
         </div>
-        
-      </div>
-      <div>
-      
+        <span class="achievements-title">Достижения</span>
+        <span class="achievements-count">4 / 8</span>
+        <div class="achievements-container">
+          <div class="achievement">
+            <img src="Src/Icons/Achievement.svg">
+            <div class="achievement-caption">Победить 1 раз</div>
+          </div>
+          <div class="achievement">
+            <img src="Src/Icons/Achievement2.svg">
+            <div class="achievement-caption">Сыграть 1 партию</div>
+          </div>
+          <div class="achievement">
+            <img src="Src/Icons/Achievement2.svg">
+            <div class="achievement-caption">Победить 1 раз</div>
+          </div>
+          <div class="achievement">
+            <img src="Src/Icons/Achievement2.svg">
+            <div class="achievement-caption">Сыграть 1 партию</div>
+          </div>
+          <div class="unreceived-achievement">
+            <img src="Src/Icons/Achievement.svg">
+            <div class="achievement-caption">Победить 1 раз</div>
+          </div>
+          <div class="unreceived-achievement">
+            <img src="Src/Icons/Achievement2.svg">
+            <div class="achievement-caption">Сыграть 1 партию</div>
+          </div>
+          <div class="unreceived-achievement">
+            <img src="Src/Icons/Achievement.svg">
+            <div class="achievement-caption">Победить 1 раз</div>
+          </div>
+          <div class="unreceived-achievement">
+            <img src="Src/Icons/Achievement2.svg">
+            <div class="achievement-caption">Сыграть 1 партию</div>
+          </div>
+        </div>
       </div>
     </main>
-    
+  
   </body>
 </html>

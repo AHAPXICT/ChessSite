@@ -2,13 +2,15 @@
 @import url("../CSS/site.css");
 
 :root {
-  --border-radius: 30px;
+  --border-radius: 20px;
 }
 
 .main {
   display: grid;
   grid-template-columns: 0.2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
 }
 
 
@@ -16,23 +18,152 @@
   grid-row: span 2;
   background: var(--background-dark-3);
   border-radius: var(--border-radius);
+  color: var(--main-color-1);
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.selected-game-type {
+  color: var(--main-hover-color-1);
+  position: relative;
+}
+.game-times > a {
+  position: relative;
+  padding: 1px 0 1px 2.5rem;
+}
 
+#selected-time-control {
+  color: var(--main-hover-color-1);
+}
 
-.graph-container {
-  background: var(--background-dark-3);
+.left-menu-container >  a {
+  position: relative;
+  font-size: 1.1rem;
+  padding: .5rem 2vw .5rem 1.5rem;
+}
+
+.left-menu-container a::after {
+  content: "";
+  width: .2rem;
+  height: inherit;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  bottom: 0;
+  transition: all 0.3s;
+  transform: scale(0);
+  background-color: var(--main-hover-color-1);
+  margin: .5rem 0 .5rem 0;
+}
+#selected-time-control::after {
+  transform: scale(1.1);
+}
+.game-times > a::after {
+  height: 1.25rem;
+}
+
+.left-menu-container a:hover::after {
+  transform: scale(1.1);
+}
+.game-times {
+  display: flex;
+  flex-direction: column;
+}
+.games-info-container {
+  background-color: var(--background-dark-3);
   border-radius: var(--border-radius);
+  padding: 15px 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
+
+.graph-img {
+  scale: 0.97;
+  margin: 20px 0 0 -10px;
+}
+
+.user-name-title {
+  color: var(--main-color-1);
+  font-size: 1.3rem;
+}
+.graph-container {
+  color: var(--white-low-text);
+  font-size: 0.9rem;
+}
+
 .graph-setbar {
   background: var(--background-dark-2);
   border-radius: 20px;
   border: 1px solid var(--white-text-1);
+  height: 15px;
+  width: 800px;
+  margin: 10px;
 }
-
-
-
+.graph-start-date {
+  margin: 0 0 0 10px;
+}
+.graph-end-date {
+  margin: 0 0 0 650px;
+}
+.games-statistics-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 10px;
+  align-items: start;
+  color: var(--white-text-2);
+}
+.games-statistics-container > div > div {
+  margin: 10px 0;
+}
 .user-container {
   background: var(--background-dark-3);
   border-radius: var(--border-radius);
+  color: var(--main-color-1);
+  padding: 20px 25px;
+  font-size: 1.3rem;
 }
+.user-info {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 60%;
+  font-size: 1rem;
+  text-align: center;
+  gap: 16px;
+  padding: 6px 0 24px 0;
+}
+.user-info > div:nth-child(n + 4) {
+  color: var(--white-text-2);
+}
+.achievements-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.achievements-count {
+  margin: 0 1rem;
+}
+.achievements-container > div {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.achievement-caption {
+  color: var(--white-low-text);
+}
+.achievement {
+
+}
+.unreceived-achievement {
+  opacity: 50%;
+}
+
+
+
+

@@ -1,5 +1,6 @@
 @import url("../CSS/variables.css");
 @import url("../CSS/reset.css");
+@import url("../CSS/media-queries.css");
 
 @font-face {
   font-family: "MontserratAlt";
@@ -171,8 +172,8 @@ a:hover {
   color: var(--blue-link-hover);
 }
 .right-center-container {
-  border-bottom: 1px solid var(--white-header-text);
-  border-top: 1px solid var(--white-header-text);
+  border-bottom: 1px solid var(--white-text-2);
+  border-top: 1px solid var(--white-text-2);
 }
 .right-button-container {
   display: flex;
@@ -181,21 +182,21 @@ a:hover {
 .right-button-container > button {
   background: var(--background-gray-3);
   border-radius: 10px;
-  border: 1px solid var(--white-header-text);
+  border: 1px solid var(--white-text-2);
   margin: 0.8rem 1rem;
   padding: 3px;
-  color: var(--white-header-text)
+  color: var(--white-text-2)
 }
 .right-button-container > button:hover {
   color: var(--background-gray-1);
-  background: var(--white-header-text);
+  background: var(--white-text-2);
 }
 
 
 /*HISTORY-TABLE*/
 .history-table {
   background: #323232;
-  color: var(--white-header-text);
+  color: var(--white-text-2);
   font-family: 'RobotoThin', sans-serif;
   letter-spacing: 1px;
   font-size: 0.9rem;
