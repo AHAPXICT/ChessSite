@@ -1,29 +1,7 @@
 @import url("../CSS/variables.css");
 @import url("../CSS/reset.css");
 @import url("../CSS/media-queries.css");
-
-@font-face {
-  font-family: "MontserratAlt";
-  src: url("../Fonts/MontserratAlternates-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../Fonts/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "RobotoThin";
-  src: url("../Fonts/Roboto-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
+@import url("../CSS/fonts.css");
 
 /*ALL DOCUMENT*/
 html {
