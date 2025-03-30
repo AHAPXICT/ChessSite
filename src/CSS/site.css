@@ -12,7 +12,7 @@ a, button {
 }
 body {
   background-color: var(--background-dark-2);
-  background-image: url("../Img/BackgroundPieces.svg");
+  background-image: url("../img/BackgroundPieces.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;

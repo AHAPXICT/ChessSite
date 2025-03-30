@@ -1,6 +1,4 @@
-@import url("../CSS/variables.css");
 @import url("../CSS/site.css");
-@import url("../CSS/media-queries.css");
 
 /*MAIN*/
 main {
@@ -8,12 +6,12 @@ main {
   grid-template-columns: 0.3fr 1fr 0.3fr;
   grid-auto-flow: column;
   font-family: 'MontserratAlt', cursive, sans-serif;
-  background-image: url("../Img/Board.png");
+  background-image: url("../img/Board.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 42%;
   background-attachment: fixed;
-  height: 85vh;
+  height: 710px
 }
 .news-sidebar {
   display: flex;
@@ -56,7 +54,6 @@ main {
 }
 
 .button-container {
-  grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-self: center;
@@ -71,7 +68,7 @@ main {
   color: var(--main-color-1);
   border-radius: 30px;
   border: none;
-  width: 29vw;
+  width: 473px;
   height: calc(30px + 1.1vw);
   font-size: 1.6rem;
 }
@@ -84,8 +81,6 @@ main {
 footer {
   background-color: var(--background-dark-1);
   color: var(--white-text-2);
-  position: relative;
-  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -112,4 +107,26 @@ footer a:hover {
 }
 .footer-list-left {
   gap: 3vw;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1199px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
 }
