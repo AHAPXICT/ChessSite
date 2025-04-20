@@ -8,7 +8,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // base: '/ChessSite/'
+  base: '/ChessSite/',
+
   build: {
     rollupOptions: {
       input: {
@@ -20,5 +21,6 @@ export default defineConfig({
         learn: resolve(__dirname, 'learn.html'),
       },
     },
+    outDir: 'docs',
   },
 })
