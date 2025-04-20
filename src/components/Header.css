@@ -4,7 +4,7 @@
   align-items: center;
   background-color: var(--background-dark-1);
   border-bottom: 2px solid var(--main-color-1);
-  position: relative;
+  position: sticky;
   top: 0;
   font-size: 1rem;
   margin: 0;
@@ -136,7 +136,8 @@ header > div {
     position: fixed;
     top: 0;
     left: -50%;
-    width: 30%;
+    width: 45%;
+    max-width: 250px;
     height: 100vh;
     background: var(--background-dark-1);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
