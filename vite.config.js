@@ -7,7 +7,7 @@ let __dirname = dirname(fileURLToPath(import.meta.url))
 
 const pages = {
 	main: resolve(__dirname, 'index.html'),
-	settings: 'settings.html',
+	settings: resolve(__dirname, 'settings.html'),
 	game: resolve(__dirname, 'game.html'),
 	history: resolve(__dirname, 'history.html'),
 	user: resolve(__dirname, 'user.html'),

@@ -12,7 +12,7 @@ export default function Header() {
 					<span className="burger-line"></span>
 				</button>
 
-				<a href="../../index.html" className="logo">
+				<a href="../../ChessSite/index.html" className="logo">
 					<img className="logo-image" src="./Src/Icons/Logo.svg" alt=""/>
 					<strong>ChangeChess.org</strong>
 				</a>
@@ -20,7 +20,7 @@ export default function Header() {
 			</div>
 			<div className="right-header">
 				<Search/>
-				<a href="../../user.html" className="user-profile">
+				<a href="../../ChessSite/user.html" className="user-profile">
 					<span className="user-name">UserName</span>
 					<svg width="34" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -36,10 +36,10 @@ function Nav() {
 	return (
 		<nav className="nav-menu">
 			<ul className="nav-list">
-				<li><a className="menu-main-ref" href="../../index.html">Главная</a></li>
-				<li><a href="../../settings.html">Настройки</a></li>
-				<li><a href="../../history.html">История</a></li>
-				<li><a href="../../learn.html">Обучение</a></li>
+				<li><a className="menu-main-ref" href="../../ChessSite/index.html">Главная</a></li>
+				<li><a href="../../ChessSite/settings.html">Настройки</a></li>
+				<li><a href="../../ChessSite/history.html">История</a></li>
+				<li><a href="../../ChessSite/learn.html">Обучение</a></li>
 			</ul>
 		</nav>
 	)
