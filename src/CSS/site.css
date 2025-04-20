@@ -72,9 +72,6 @@ a:active {
   color: var(--white-text-1);
   margin: 0 1vw;
 }
-.menu-main-ref {
-  display: none;
-}
 .player-name-right {
   font-size: 1.5rem;
   margin: 0;
