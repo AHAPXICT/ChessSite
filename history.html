@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Src/CSS/history.css">
     <script type="module" src="/src/main.jsx"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>History</title>
   </head>
   
   <body>
     <!--HEADER-->
-   <header id="header"></header>
+    <header id="header"></header>
     <!--MAIN-->
     <main class="main">
       
@@ -69,56 +70,7 @@
             <div class="selected-game-time">10.02.2024 в 12:30</div>
           </div>
           <img class="board" src="Src/Img/Board.jpg" alt="">
-          <aside class="right-container">
-            <div class="pieces-container">
-              <img style="opacity: 0" src="Src/Icons/HandedPiece.svg" alt=""/>
-            </div>
-            <div class="right-game-container">
-              <div class="right-header">
-                <span class="time-right">05:00</span>
-                <a class="player-name-right">Player 2</a>
-              </div>
-              <div class="right-center-container">
-                <div class="table-div">
-                  <table class="history-table">
-                    <tr>
-                      <th>1</th>
-                      <th>e4</th>
-                      <th>c5</th>
-                    </tr>
-                    <tr>
-                      <th>2</th>
-                      <th>c3</th>
-                      <th>d6</th>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <th>d4</th>
-                      <th>cxd4</th>
-                    </tr>
-                    <tr>
-                      <th>4</th>
-                      <th>cxd4</th>
-                      <th>d5</th>
-                    </tr>
-                    <tr>
-                      <th>5</th>
-                      <th>b3</th>
-                      <th>b6</th>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="right-header">
-                <span class="time-right">05:00</span>
-                <a class="player-name-right">UserName</a>
-              </div>
-            </div>
-            <div class="pieces-container">
-              <img src="Src/Icons/HandedPiece.svg" alt=""/>
-              <span>+5</span>
-            </div>
-          </aside>
+          <div id="history-and-time"></div>
         </div>
         
         <div class="unselected-game">
@@ -172,9 +124,50 @@
             <div class="unselected-date">10.02.2024 в 12:35</div>
           </div>
         </div>
-        
+      
       </div>
     </main>
   
   </body>
 </html>
+<script>
+  const title = document.querySelector('.left-menu-title');
+  const menuContainer = document.querySelector('.left-find-menu');
+  
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 700) {
+      title.removeEventListener('click', titleClick)
+      hide('inline-block', 'active')
+    }
+    if (window.innerWidth <= 700) {
+      title.addEventListener('click', titleClick)
+      hide('none', undefined)
+    }
+  });
+  
+  window.addEventListener('load', () => {
+    if (window.innerWidth <= 700) {
+      title.addEventListener('click', titleClick)
+      hide('none', undefined)
+    }
+  });
+  
+  
+  const titleClick = () => {
+    if (title.tag === 'active') {
+      hide('none', undefined)
+    }
+    else {
+      hide('inline-block', 'active');
+    }
+  }
+  
+  function hide(display, tag) {
+    menuContainer.childNodes.forEach((item) => {
+      if (item.nodeName === 'SPAN' || item.nodeName === 'SELECT') {
+        item.style.display = display;
+      }
+      title.tag = tag
+    })
+  }
+</script>

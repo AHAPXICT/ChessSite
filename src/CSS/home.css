@@ -3,7 +3,7 @@
 /*MAIN*/
 main {
   display: grid;
-  grid-template-columns: 0.3fr 1fr 0.3fr;
+  grid-template-columns: 300px 1fr 0.3fr;
   grid-auto-flow: column;
   font-family: 'MontserratAlt', cursive, sans-serif;
   background-image: url("../img/Board.png");
@@ -13,25 +13,30 @@ main {
   background-attachment: fixed;
   height: 710px;
 }
+
 .news-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin: 0 2.4vw;
+  margin: 0 30px;
   align-self: center;
   color: var(--white-text-2);
   align-items: center;
+  gap: 20px;
 }
+
 .news-sidebar > a {
-  margin: 3vh 0;
+  margin: 25px 0;
 }
+
 .news-header {
   color: var(--white-text-2);
   text-align: center;
-  margin-top: 4vw;
-  margin-bottom: -1vw;
+  margin-top: 50px;
+  margin-bottom: -10px;
   font-size: 1.1rem;
 }
+
 .news-container {
   background-color: var(--background-dark-3);
   border-radius: 20px;
@@ -41,12 +46,17 @@ main {
   width: fit-content;
   overflow: clip;
 }
+
 .news-container * {
   color: var(--white-text-2);
   font-size: 0.9rem;
   text-align: center;
   text-wrap: wrap;
 }
+.container-title {
+  margin: 10px 10px;
+}
+
 .news-container img {
   border-bottom: 1px solid var(--white-text-2);
   display: block;
@@ -60,25 +70,33 @@ main {
   justify-items: center;
   row-gap: 2.2vw;
 }
+
 .button-container button:first-child {
   grid-column: 1 / span 2;
 }
+
 .button-container button {
   background-color: var(--background-dark-3);
   color: var(--main-color-1);
   border-radius: 30px;
   border: none;
-  width: calc(473px);
+  width: 473px;
   height: calc(30px + 1.1vw);
   font-size: 1.6rem;
 }
-.button-container button:hover {
+@media (hover: hover) {
+  .button-container button:hover {
+    background-color: var(--main-color-1);
+    color: var(--background-dark-2);
+  }
+}
+.button-container button:active {
   background-color: var(--main-color-1);
   color: var(--background-dark-2);
 }
 
 /*FOOTER*/
-footer {
+.footer {
   background-color: var(--background-dark-1);
   color: var(--white-text-2);
   width: 100%;
@@ -87,6 +105,7 @@ footer {
   height: 60px;
   font-size: 0.9rem;
 }
+
 footer ul {
   display: flex;
   align-items: center;
@@ -94,36 +113,106 @@ footer ul {
   margin: var(--margin-list);
   gap: 1vw;
 }
+
 footer a {
-   color: var(--white-text-1);
- }
-footer a:hover {
-  color: var(--blue-link-hover);
+  color: var(--white-text-1);
 }
+
+@media (hover: hover) {
+  footer a:hover {
+    color: var(--blue-link-hover);
+  }
+}
+
+
 .footer-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .footer-list-left {
   gap: 3vw;
 }
 
-@media (max-width:1170px){
+@media (max-width: 1300px) {
   main {
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 200px 1fr 0.3fr;
   }
+
+  .button-container > button {
+    width: 400px;
+    border-radius: 20px;
+  }
+  .news-container {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.8fr;
+  }
+  .news-main-container {
+    grid-row: 2;
+  }
+  .news-sidebar {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .button-container {
+    grid-column: 1;
+    margin: 50px 20px 0 20px;
+    font-size: 0.9rem;
+    gap: 20px;
+  }
+  .button-container button:first-child {
+    width: 50%;
+  }
+  .button-container button {
+    width: 100%;
+    border-radius: 15px;
+  }
+  html {
+    font-size: 14px !important;
+  }
+  main {
+    background-image: none;
+  }
+  .news-header {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 680px) {
   .button-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    gap: 10px;
+  }
+  html {
+    font-size: 12px !important;
   }
   .button-container button:first-child {
     grid-column: 1;
+    width: 100%;
   }
-}
-@media (min-width: 768px) and (max-width:991px){
-
-}
-@media (min-width: 480px) and (max-width:767px){
-
+  .news-sidebar {
+    margin: 0 10px;
+  }
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 70px;
+  }
+  .footer-list {
+    display: flex;
+    justify-content: stretch  ;
+  }
+  .tg-link {
+    width: 30px;
+    margin: 0 10px;
+  }
 }

@@ -1,6 +1,7 @@
 import Search from "./Search.jsx";
 import '/src/CSS/site.css'
 import '/src/adaptiv.js'
+import './Header.css'
 
 export default function Header() {
 	return (
@@ -15,15 +16,7 @@ export default function Header() {
 					<img className="logo-image" src="./Src/Icons/Logo.svg" alt=""/>
 					<strong>ChangeChess.org</strong>
 				</a>
-
-				<nav className="nav-menu">
-					<ul className="nav-list">
-						<li><a className="menu-main-ref" href="../../index.html">Главная</a></li>
-						<li><a href="../../settings.html">Настройки</a></li>
-						<li><a href="../../history.html">История</a></li>
-						<li><a href="../../learn.html">Обучение</a></li>
-					</ul>
-				</nav>
+				<Nav />
 			</div>
 			<div className="right-header">
 				<Search/>
@@ -37,5 +30,17 @@ export default function Header() {
 				</a>
 			</div>
 		</>
+	)
+}
+function Nav() {
+	return (
+		<nav className="nav-menu">
+			<ul className="nav-list">
+				<li><a className="menu-main-ref" href="../../index.html">Главная</a></li>
+				<li><a href="../../settings.html">Настройки</a></li>
+				<li><a href="../../history.html">История</a></li>
+				<li><a href="../../learn.html">Обучение</a></li>
+			</ul>
+		</nav>
 	)
 }
