@@ -69,6 +69,7 @@ main {
   align-self: center;
   justify-items: center;
   row-gap: 2.2vw;
+  column-gap: 10px;
 }
 
 .button-container button:first-child {
@@ -141,7 +142,7 @@ footer a {
   }
 
   .button-container > button {
-    width: 400px;
+    width: 382px;
     border-radius: 20px;
   }
   .news-container {
