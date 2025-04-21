@@ -36,7 +36,7 @@ function Nav() {
 	return (
 		<nav className="nav-menu">
 			<ul className="nav-list">
-				<li className="menu-main-ref"><a  href="../../ChessSite/index.html">Главная</a></li>
+				<li><a className="menu-main-ref"  href="../../ChessSite/index.html">Главная</a></li>
 				<li><a href="../../ChessSite/settings.html">Настройки</a></li>
 				<li><a href="../../ChessSite/history.html">История</a></li>
 				<li><a href="../../ChessSite/learn.html">Обучение</a></li>

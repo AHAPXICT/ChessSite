@@ -37,6 +37,11 @@ header > div {
   padding: var(--margin-list-items);
 }
 
+.menu-main-ref {
+  display: none;
+}
+
+
 .right-header > * {
   margin: var(--margin-list-items);
 }
@@ -155,10 +160,6 @@ header > div {
     flex-direction: column;
     gap: 1rem;
   }
-  .menu-main-ref {
-    display: none;
-  }
-
   .burger-btn {
     display: block;
   }
