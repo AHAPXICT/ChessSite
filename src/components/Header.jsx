@@ -2,6 +2,7 @@ import Search from "./Search.jsx";
 import '/src/CSS/site.css'
 import '/src/adaptiv.js'
 import './Header.css'
+import logo from '/src/Icons/Logo.svg'
 
 export default function Header() {
 	return (
@@ -13,7 +14,7 @@ export default function Header() {
 				</button>
 
 				<a href="../../ChessSite/index.html" className="logo">
-					<img className="logo-image" src="./src/Icons/Logo.svg" alt=""/>
+					<img className="logo-image" src={logo} alt=""/>
 					<strong>ChangeChess.org</strong>
 				</a>
 				<Nav />
