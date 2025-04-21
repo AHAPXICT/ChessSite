@@ -13,7 +13,7 @@ export default function Header() {
 				</button>
 
 				<a href="../../ChessSite/index.html" className="logo">
-					<img className="logo-image" src="./Src/Icons/Tg.svg" alt=""/>
+					<img className="logo-image" src="./src/Icons/Logo.svg" alt=""/>
 					<strong>ChangeChess.org</strong>
 				</a>
 				<Nav />
