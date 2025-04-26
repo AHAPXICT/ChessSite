@@ -4,7 +4,7 @@ export default function HistoryAndTime() {
 	return (
 		<aside className="right-container">
 			<div className="pieces-container">
-				<img style="opacity: 0" src="Src/Icons/HandedPiece.svg" alt=""/>
+				<img style={{opacity: 0}} src="Src/Icons/HandedPiece.svg" alt=""/>
 			</div>
 			<div className="right-game-container">
 				<div className="right-header">
@@ -14,31 +14,33 @@ export default function HistoryAndTime() {
 				<div className="right-center-container">
 					<div className="table-div">
 						<table className="history-table">
-							<tr>
-								<th>1</th>
-								<th>e4</th>
-								<th>c5</th>
-							</tr>
-							<tr>
-								<th>2</th>
-								<th>c3</th>
-								<th>d6</th>
-							</tr>
-							<tr>
-								<th>3</th>
-								<th>d4</th>
-								<th>cxd4</th>
-							</tr>
-							<tr>
-								<th>4</th>
-								<th>cxd4</th>
-								<th>d5</th>
-							</tr>
-							<tr>
-								<th>5</th>
-								<th>b3</th>
-								<th>b6</th>
-							</tr>
+							<tbody>
+								<tr>
+									<th>1</th>
+									<th>e4</th>
+									<th>c5</th>
+								</tr>
+								<tr>
+									<th>2</th>
+									<th>c3</th>
+									<th>d6</th>
+								</tr>
+								<tr>
+									<th>3</th>
+									<th>d4</th>
+									<th>cxd4</th>
+								</tr>
+								<tr>
+									<th>4</th>
+									<th>cxd4</th>
+									<th>d5</th>
+								</tr>
+								<tr>
+									<th>5</th>
+									<th>b3</th>
+									<th>b6</th>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>

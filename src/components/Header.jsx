@@ -3,6 +3,7 @@ import '/src/CSS/site.css'
 import '/src/adaptiv.js'
 import './Header.css'
 import logo from '/src/Icons/Logo.svg'
+import ReactDOM from "react-dom/client";
 
 export default function Header() {
 	return (
@@ -34,6 +35,7 @@ export default function Header() {
 	)
 }
 function Nav() {
+	ReactDOM.re
 	return (
 		<nav className="nav-menu">
 			<ul className="nav-list">
