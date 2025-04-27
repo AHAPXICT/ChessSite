@@ -1,4 +1,6 @@
 import {Cell} from "./Cell";
+import {Colors} from "./Colors.ts";
+import {Queen} from "./figures/Queen.ts";
 
 export class Board {
     cells: Cell[][] = []
@@ -9,14 +11,21 @@ export class Board {
             const row: Cell[] = []
             for (let j = 0; j < 8; j++) {
                 if ((i + j) % 2 === 0) {
-                    row.push(new Cell(i, j, "black", id))
+                    row.push(new Cell(i, j, Colors.BLACK, id))
                 }
                 else {
-                    row.push(new Cell(j, i, "white", id))
+                    row.push(new Cell(j, i, Colors.WHITE, id))
                 }
                 id++;
             }
             this.cells.push(row)
         }
+    }
+
+    addFigure() {
+        new Queen(Colors.WHITE, this.getCells(3, 3), 1)
+    }
+    getCells(x: number, y: number): Cell  {
+        return this.cells[x][y];
     }
 }

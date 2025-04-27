@@ -1,5 +1,3 @@
-import Search from "./components/Search.jsx";
-
 document.addEventListener('DOMContentLoaded', function () {
 	const burgerBtn = document.querySelector('.burger-btn');
 	const navMenu = document.querySelector('.nav-menu');

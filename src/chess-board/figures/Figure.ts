@@ -2,9 +2,10 @@ import {Cell} from "../Cell";
 
 export class Figure {
     color: string
-    image
+    image: any
     cell: Cell
     id: number
+    name: string | undefined
 
     constructor(color: string, cell: Cell, id: number) {
         this.color = color;
@@ -13,7 +14,11 @@ export class Figure {
         this.cell.figure = this
     }
 
-    moveFigure(taget: Cell) {
+    canMove(target: Cell): boolean {
+        return false
+    }
+
+    moveFigure(target: Cell) {
         
     }
 }

@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import Header from "./components/Header.jsx";
 import HistoryAndTime from "./components/HistoryAndTime.jsx";
 import UnselectedGame from "./components/UnselectedGame.jsx";
-import GameBoard from "./components/GameBoard.js";
+import GameBoard from "./chess-board/GameBoard.tsx";
 
 createRoot(document.getElementById('header')).render(
   <StrictMode>

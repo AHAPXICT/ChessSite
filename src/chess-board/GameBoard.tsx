@@ -1,12 +1,14 @@
-import {Board} from "../boardClases/Board";
-import {Cell} from "../boardClases/Cell";
+import {Board} from "./Board.ts";
+import {Cell} from "./Cell.ts";
 import "./Board.css"
 import {Fragment} from "react";
 
-export default function GameBoard(color1, color2) {
+export default function GameBoard() {
     const board = new Board()
+    board.addFigure()
+
     return (
-        <div style={{display: "grid", height: "256px", width: "256px", gridTemplateRows: "repeat(8, 1fr)",
+        <div style={{display: "grid", gridTemplateRows: "repeat(8, 1fr)",
             gridTemplateColumns: "repeat(8, 1fr)"}}>
             {board.cells.map((row, index) =>
                 <Fragment key={index}>
@@ -21,6 +23,8 @@ export default function GameBoard(color1, color2) {
 
 function CellComponent({cell}) {
     return (
-        <div className={["cell", cell.color].join(' ')}></div>
+        <div className={["cell", cell.color].join(' ')}>
+            {cell.figure?.image && <img src={cell.figure.image} alt=""/>}
+        </div>
     )
 }

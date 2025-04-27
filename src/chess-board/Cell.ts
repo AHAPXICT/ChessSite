@@ -1,14 +1,15 @@
-import {Figure} from "./Figures/Figure";
+import {Figure} from "./figures/Figure";
+import {Colors} from "./Colors.ts";
 
 export class Cell {
 
     avaliable: boolean = false
-    figure: Figure | null
+    figure: Figure | undefined
 
     constructor(
         public readonly posX: number,
         public readonly posY: number,
-        public color: string,
+        public color: Colors,
         public id: number,
     ) {}
 }
