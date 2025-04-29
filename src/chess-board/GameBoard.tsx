@@ -5,7 +5,7 @@ import {Fragment} from "react";
 
 export default function GameBoard() {
     const board = new Board()
-    board.addFigure()
+    board.addFigures()
 
     return (
         <div style={{display: "grid", gridTemplateRows: "repeat(8, 1fr)",

@@ -24,7 +24,7 @@ createRoot(document.querySelector('.unselected-game')).render(
     </StrictMode>
 )
 
-createRoot(document.getElementById('board')).render(
+createRoot(document.querySelector('board')).render(
     <StrictMode>
         <GameBoard />
     </StrictMode>
