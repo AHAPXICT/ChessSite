@@ -4,7 +4,7 @@ import '/src/adaptiv.js'
 import './Header.css'
 import logo from '/src/icons/Logo.svg'
 import ReactDOM from "react-dom/client";
-import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Link, Route, Routes} from "react-router-dom";
 import GameBoard from "../chess-board/GameBoard.js";
 
 export default function Header() {
@@ -31,12 +31,13 @@ export default function Header() {
 					</svg>
 				</a>
 			</div>
-			<BrowserRouter basename="/ChessSite">
+			<HashRouter basename="/ChessSite">
 				<Routes>
 					<Route path="/goida" element={<Nav />}></Route>
 					<Route path="/ChessSite/goida" element={<Search />}></Route>
+					<Link to="/goida"><Nav/></Link>
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</>
 	)
 }
