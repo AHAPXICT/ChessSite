@@ -31,7 +31,7 @@ export default function Header() {
 			{/*		</svg>*/}
 			{/*	</a>*/}
 			{/*</div>*/}
-			<HashRouter basename="/ChessSite">
+			<HashRouter>
 				<nav>
 					<ul>
 						<li>
