@@ -5,11 +5,18 @@ import Header from "./components/Header.jsx";
 import HistoryAndTime from "./components/HistoryAndTime.jsx";
 import UnselectedGame from "./components/UnselectedGame.jsx";
 import GameBoard from "./chess-board/GameBoard.tsx";
+import App from "./App.jsx";
 
-createRoot(document.getElementById('header')).render(
-  <StrictMode>
-    <Header />
-  </StrictMode>,
+// createRoot(document.getElementById('header')).render(
+//   <StrictMode>
+//     <Header />
+//   </StrictMode>,
+// )
+
+createRoot(document.getElementById('root')).render(
+    <StrictMode>
+        <App />
+    </StrictMode>
 )
 
 createRoot(document.getElementById('history-and-time')).render(

@@ -1,32 +1,26 @@
-import { useState } from 'react'
-import './App.css'
+import Header from "./components/Header.jsx";
+import {HashRouter, Route, Routes} from "react-router-dom";
+import Search from "./components/Search.jsx";
+import GamePage from "./pages/GamePage.js";
+import GameBoard from "./chess-board/GameBoard.js";
 
-function App() {
-  const [count, setCount] = useState(0)
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-
-        </a>
-        <a href="https://react.dev" target="_blank">
-
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+	return (
+		<>
+			{/*<GamePage />*/}
+			<HashRouter>
+				{/*<Routes>*/}
+				{/*	/!*<Route index element={<GamePage />} />*!/*/}
+				{/*	<Route path="/" element={<GamePage />} />*/}
+				{/*	<Route path="/goida" element={<Nav/>}></Route>*/}
+				{/*	<Route path="/ChessSite/goida" element={<Search/>}></Route>*/}
+				{/*</Routes>*/}
+				<Header />
+				<Routes>
+					<Route exact path="/" element={<GameBoard />}></Route>
+					<Route exact path="/goida" element={<GameBoard />}></Route>
+				</Routes>
+			</HashRouter>
+		</>
+	)
 }
-
-export default App
