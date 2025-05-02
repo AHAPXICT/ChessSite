@@ -1,5 +1,5 @@
-@import url("../CSS/variables.css");
-@import url("../CSS/site.css");
+@import url("../css/variables.css");
+@import url("../css/site.css");
 
 :root {
   --border-radius: 20px;
@@ -162,6 +162,18 @@
 }
 .unreceived-achievement {
   opacity: 50%;
+}
+
+.win-count {
+  color: var(--win-green);
+}
+
+.lose-count {
+  color: var(--lose-red);
+}
+
+.draw-count {
+  color: var(--white-low-text);
 }
 
 @media (max-width: 1300px) {

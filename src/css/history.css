@@ -1,6 +1,3 @@
-@import url("../CSS/variables.css");
-@import url("../CSS/site.css");
-
 .main {
   display: grid;
   grid-template-columns: 0.3fr 1fr;

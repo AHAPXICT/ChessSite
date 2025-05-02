@@ -1,9 +1,10 @@
+import '/src/css/settings.css'
+import GameBoard from "../chess-board/GameBoard.tsx";
+
 export default function SettingsPage() {
     return (
         <>
             <body>
-                <header id="header"></header>
-
                 <main className="main">
                     <nav className="settings-sidebar">
                         <a href="">Общие настройки</a>
@@ -37,7 +38,9 @@ export default function SettingsPage() {
 
                             <div className="settings-preview">
                                 <div className="preview-header">Предпросмотр</div>
-                                <div className="preview-img" id="board"></div>
+                                <div className="preview-img" id="board">
+                                    <GameBoard />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,9 @@
+import '/src/css/learn.css'
+
 export default function LearnPage() {
     return (
         <>
             <body>
-                <header id="header"></header>
-
                 <main className="main">
                     <nav className="settings-sidebar">
                         <a href="">Шахматы</a>

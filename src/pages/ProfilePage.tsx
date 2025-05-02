@@ -1,9 +1,9 @@
+import '/src/css/profile.css'
+
 export default function ProfilePage() {
     return (
         <>
             <body>
-                <header id="header"></header>
-
                 <main className="main">
                     <aside className="left-menu-container">
                         <a className="selected-game-type" href="">Шахматы</a>
@@ -35,10 +35,10 @@ export default function ProfilePage() {
                             </div>
                             <div>
                                 <div>100</div>
-                                <div style="color: var(--win-green)">40</div>
-                                <div style="color: var(--lose-red)">10</div>
-                                <div style="color: var(--white-low-text)">50</div>
-                                <div style="color: var(--win-green)">40%</div>
+                                <div className="win-count">40</div>
+                                <div className="lose-count">10</div>
+                                <div className="draw-count">50</div>
+                                <div className="win-count">40%</div>
                             </div>
                         </div>
                     </div>

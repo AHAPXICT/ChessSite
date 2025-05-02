@@ -3,6 +3,12 @@ import {HashRouter, Route, Routes} from "react-router-dom";
 import Search from "./components/Search.jsx";
 import GamePage from "./pages/GamePage.js";
 import GameBoard from "./chess-board/GameBoard.js";
+import HomePage from "./pages/HomePage.js";
+import SettingsPage from "./pages/SettingsPage.js";
+import LearnPage from "./pages/LearnPage.js";
+import {Profiler} from "react";
+import ProfilePage from "./pages/ProfilePage.js";
+import HistoryPage from "./pages/HistoryPage.js";
 
 export default function App() {
 	return (
@@ -17,8 +23,11 @@ export default function App() {
 				{/*</Routes>*/}
 				<Header />
 				<Routes>
-					<Route exact path="/" element={<GameBoard />}></Route>
-					<Route exact path="/goida" element={<GameBoard />}></Route>
+					<Route exact path="/" element={<HomePage />}></Route>
+					<Route exact path="/settings" element={<SettingsPage />}></Route>
+					<Route exact path="/learn" element={<LearnPage />}></Route>
+					<Route exact path="/history" element={<HistoryPage />}></Route>
+					<Route exact path="/user" element={<ProfilePage />}></Route>
 				</Routes>
 			</HashRouter>
 		</>

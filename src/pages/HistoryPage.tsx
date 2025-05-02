@@ -1,3 +1,5 @@
+import "../css/history.css"
+
 export default function HistoryPage() {
     const title = document.querySelector('.left-menu-title');
     const menuContainer = document.querySelector('.left-find-menu');
@@ -40,15 +42,6 @@ export default function HistoryPage() {
     }
     return (
         <>
-            <head>
-                <meta charSet="UTF-8"/>
-                <link rel="stylesheet" type="text/css" href="Src/CSS/history.css"/>
-                <script type="module" src="/src/main.jsx"></script>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" type="image/png" href="src/icons/Logo.svg"/>
-                <title>History</title>
-            </head>
-
             <body>
                 <main className="main">
 

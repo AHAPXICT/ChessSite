@@ -1,8 +1,9 @@
+import '../css/game.css'
+
 export default function GamePage() {
     return (
         <>
             <body>
-                <header id="header"></header>
                 <main className="main">
                     <aside className="left-container">
                         <div className="game-info">

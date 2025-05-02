@@ -1,5 +1,5 @@
-@import url("../CSS/variables.css");
-@import url("../CSS/reset.css");
+@import url("../css/variables.css");
+@import url("../css/reset.css");
 
 /*ALL DOCUMENT*/
 html {
@@ -14,11 +14,8 @@ a, button {
   cursor: pointer;
 }
 body {
-
-
   background-size: 82%;
   font-family: 'Roboto', Arial, sans-serif;
-
 }
 
 a {
@@ -130,6 +127,12 @@ a:active {
 .history-table th:first-child {
   background: var(--background-gray-1);
   padding: 0 1rem;
+}
+.cell.white {
+  background-color: white;
+}
+.cell.black {
+  background-color: #AAFF
 }
 
 @media (max-width: 991px) {

@@ -18,6 +18,9 @@ const pages = {
 export default defineConfig({
 	plugins: [react()],
 	base: '/ChessSite',
+	css: {
+		modules: true,
+	},
 	build: {
 		rollupOptions: {
 			input: {

@@ -1,6 +1,4 @@
 import {Board} from "./Board.ts";
-import {Cell} from "./Cell.ts";
-import "./Board.css"
 import {Fragment} from "react";
 
 export default function GameBoard() {
