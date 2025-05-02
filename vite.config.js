@@ -2,6 +2,7 @@ import {dirname, resolve} from 'node:path'
 import {fileURLToPath} from 'node:url'
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
+import {reactScopedCssPlugin} from "rollup-plugin-react-scoped-css";
 
 let __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -16,11 +17,8 @@ const pages = {
 
 // https://vite.dev/config/
 export default defineConfig({
-	plugins: [react()],
+	plugins: [react(), reactScopedCssPlugin()],
 	base: '/ChessSite',
-	css: {
-		modules: true,
-	},
 	build: {
 		rollupOptions: {
 			input: {

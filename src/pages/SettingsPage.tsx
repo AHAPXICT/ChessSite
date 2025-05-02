@@ -1,4 +1,4 @@
-import '/src/css/settings.css'
+import '../css/settings.scoped.css'
 import GameBoard from "../chess-board/GameBoard.tsx";
 
 export default function SettingsPage() {

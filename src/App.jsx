@@ -1,13 +1,9 @@
 import Header from "./components/Header.jsx";
 import {HashRouter, Route, Routes} from "react-router-dom";
-import Search from "./components/Search.jsx";
-import GamePage from "./pages/GamePage.js";
-import GameBoard from "./chess-board/GameBoard.js";
 import HomePage from "./pages/HomePage.js";
 import SettingsPage from "./pages/SettingsPage.js";
-import LearnPage from "./pages/LearnPage.js";
-import {Profiler} from "react";
 import ProfilePage from "./pages/ProfilePage.js";
+import LearnPage from "./pages/LearnPage.js";
 import HistoryPage from "./pages/HistoryPage.js";
 
 export default function App() {

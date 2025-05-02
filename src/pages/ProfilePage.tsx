@@ -1,4 +1,4 @@
-import '/src/css/profile.css'
+import '../css/profile.scoped.css'
 
 export default function ProfilePage() {
     return (

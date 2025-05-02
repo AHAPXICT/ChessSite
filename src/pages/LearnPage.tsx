@@ -1,4 +1,4 @@
-import '/src/css/learn.css'
+import '../css/learn.scoped.css'
 
 export default function LearnPage() {
     return (
@@ -14,8 +14,7 @@ export default function LearnPage() {
                     </nav>
                     <div className="settings-div">
                         <div className="settings-header">Основы классических шахмат</div>
-                        <p className="learn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            consectetur
+                        <p className="learn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur
                             finibus arcu, nec sodales magna efficitur ut. Proin et aliquet neque, quis interdum lectus.
                             Fusce tincidunt turpis a urna laoreet tempor. Praesent euismod pretium hendrerit. Vivamus
                             rhoncus erat in sem maximus sagittis. Fusce leo velit, laoreet eget condimentum vel,

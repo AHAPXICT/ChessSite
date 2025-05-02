@@ -1,4 +1,4 @@
-import "../css/history.css"
+import "../css/history.scoped.css"
 
 export default function HistoryPage() {
     const title = document.querySelector('.left-menu-title');

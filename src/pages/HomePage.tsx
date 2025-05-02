@@ -1,4 +1,4 @@
-import '../css/home.css'
+import '../css/home.scoped.css'
 import newsPhoto from '../img/NewsPrimer.jpg'
 import tgLogo from '../icons/Tg.svg'
 

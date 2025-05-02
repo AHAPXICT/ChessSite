@@ -1,4 +1,4 @@
-import '../css/game.css'
+import '../css/game.scoped.css'
 
 export default function GamePage() {
     return (
