@@ -54,6 +54,10 @@ a:active {
   font-size: 1.2rem;
 }
 
+/*HISTORY-AND-TIME-CONTAINER*/
+.history-and-time-container {
+  width: 100%;
+}
 .right-game-container {
   background: var(--background-dark-3);
   border-radius: 20px;
@@ -127,6 +131,14 @@ a:active {
 .history-table th:first-child {
   background: var(--background-gray-1);
   padding: 0 1rem;
+}
+
+/*BOARD*/
+.game-board {
+  margin: 50px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .cell.white {
   background-color: white;

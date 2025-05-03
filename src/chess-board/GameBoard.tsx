@@ -6,16 +6,18 @@ export default function GameBoard() {
     board.addFigures()
 
     return (
-        <div style={{display: "grid", gridTemplateRows: "repeat(8, 1fr)",
-            gridTemplateColumns: "repeat(8, 1fr)"}}>
-            {board.cells.map((row, index) =>
-                <Fragment key={index}>
-                    {row.map(cell =>
-                        <CellComponent cell={cell} key={cell.id}/>
-                    )}
-                </Fragment>
-            )}
-        </div>
+            <div style={{
+                display: "grid", gridTemplateRows: "repeat(8, 1fr)",
+                gridTemplateColumns: "repeat(8, 1fr)"
+            }} className="game-board">
+                {board.cells.map((row, index) =>
+                    <Fragment key={index}>
+                        {row.map(cell =>
+                            <CellComponent cell={cell} key={cell.id}/>
+                        )}
+                    </Fragment>
+                )}
+            </div>
     )
 }
 

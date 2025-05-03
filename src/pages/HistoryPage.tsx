@@ -25,7 +25,6 @@ export default function HistoryPage() {
         }
     });
 
-
     const titleClick = () => {
         if (title?.tag === 'active') {
             hide('none', undefined)
@@ -43,6 +42,7 @@ export default function HistoryPage() {
             title.tag = tag
         })
     }
+
     return (
         <>
             <body>
@@ -106,10 +106,8 @@ export default function HistoryPage() {
                             <GameBoard />
                             <HistoryAndTime />
                         </div>
-
                         <UnselectedGame />
                         <UnselectedGame />
-
                     </div>
                 </main>
 
