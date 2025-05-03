@@ -1,10 +1,10 @@
-import '/src/CSS/site.css'
+import handedPiece from '../icons/HandedPiece.svg'
 
 export default function HistoryAndTime() {
 	return (
 		<aside className="right-container">
 			<div className="pieces-container">
-				<img style={{opacity: 0}} src="Src/Icons/HandedPiece.svg" alt=""/>
+				<img style={{opacity: 0}} src={handedPiece} alt=""/>
 			</div>
 			<div className="right-game-container">
 				<div className="right-header">
@@ -50,7 +50,7 @@ export default function HistoryAndTime() {
 				</div>
 			</div>
 			<div className="pieces-container">
-				<img src="Src/Icons/HandedPiece.svg" alt=""/>
+				<img src={handedPiece} alt=""/>
 				<span>+5</span>
 			</div>
 		</aside>

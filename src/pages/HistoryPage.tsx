@@ -1,4 +1,7 @@
 import "../css/history.scoped.css"
+import UnselectedGame from '../components/UnselectedGame'
+import GameBoard from "../chess-board/GameBoard.tsx";
+import HistoryAndTime from "../components/HistoryAndTime.tsx";
 
 export default function HistoryPage() {
     const title = document.querySelector('.left-menu-title');
@@ -100,12 +103,12 @@ export default function HistoryPage() {
                                 </div>
                                 <div className="selected-game-time">10.02.2024 в 12:30</div>
                             </div>
-                            <div id="board"></div>
-                            <div id="history-and-time"></div>
+                            <GameBoard />
+                            <HistoryAndTime />
                         </div>
 
-                        <div className="unselected-game"></div>
-                        <div className="unselected-game"></div>
+                        <UnselectedGame />
+                        <UnselectedGame />
 
                     </div>
                 </main>

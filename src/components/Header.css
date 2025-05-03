@@ -1,5 +1,3 @@
-@import url("../css/site.css");
-
 #header {
   display: flex;
   justify-content: space-between;
@@ -138,7 +136,7 @@ header > div {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 970px) {
+@media (max-width: 991px) {
   .nav-menu {
     position: fixed;
     top: 0;

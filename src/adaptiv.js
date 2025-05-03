@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	const leftHeader = document.querySelector('.left-header');
 
 	const res = function() {
-		if (window.innerWidth > 970) {
+		if (window.innerWidth > 991) {
 			burgerBtn.classList.remove('active');
 			navMenu.classList.remove('active');
 			leftHeader.appendChild(navMenu);
 		}
-		if (window.innerWidth <= 970) {
+		if (window.innerWidth <= 991) {
 			body.appendChild(navMenu);
 		}
 	}

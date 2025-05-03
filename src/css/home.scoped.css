@@ -173,9 +173,6 @@ footer a {
     width: 100%;
     border-radius: 15px;
   }
-  html {
-    font-size: 14px !important;
-  }
   main {
     background-image: none;
   }

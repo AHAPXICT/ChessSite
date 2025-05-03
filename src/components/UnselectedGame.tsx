@@ -1,8 +1,10 @@
+import board from '../img/Board.jpg'
+import '../css/history.scoped.css'
 
 export default function UnselectedGame() {
 	return (
-		<>
-			<img src="Src/Img/Board.jpg" className="unselected-image" alt=""/>
+		<div className="unselected-game">
+			<img src={board} className="unselected-image" alt=""/>
 			<div className="unselected-text-container">
 				<div>Классические шахматы</div>
 				<div>Блиц, 5 + 2</div>
@@ -25,6 +27,6 @@ export default function UnselectedGame() {
 				</div>
 				<div className="unselected-date">10.02.2024 в 12:35</div>
 			</div>
-		</>
+		</div>
 	)
 }

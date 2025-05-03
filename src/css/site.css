@@ -135,8 +135,20 @@ a:active {
   background-color: #AAFF
 }
 
+@media (max-width: 1300px) {
+
+}
+
 @media (max-width: 991px) {
   html {
     background-image: url("/src/img/BackgroundPiecesSmall.svg");
+    font-size: 14px !important;
   }
 }
+
+@media (max-width: 680px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+

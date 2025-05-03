@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createRoot } from 'react-dom/client'
 import Header from "./components/Header.jsx";
 import HistoryAndTime from "./components/HistoryAndTime.jsx";
-import UnselectedGame from "./components/UnselectedGame.jsx";
+import UnselectedGame from "./components/UnselectedGame.tsx";
 import GameBoard from "./chess-board/GameBoard.tsx";
 import App from "./App.jsx";
 

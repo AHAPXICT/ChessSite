@@ -5,18 +5,12 @@ import SettingsPage from "./pages/SettingsPage.js";
 import ProfilePage from "./pages/ProfilePage.js";
 import LearnPage from "./pages/LearnPage.js";
 import HistoryPage from "./pages/HistoryPage.js";
+import GamePage from "./pages/GamePage.js";
 
 export default function App() {
 	return (
 		<>
-			{/*<GamePage />*/}
 			<HashRouter>
-				{/*<Routes>*/}
-				{/*	/!*<Route index element={<GamePage />} />*!/*/}
-				{/*	<Route path="/" element={<GamePage />} />*/}
-				{/*	<Route path="/goida" element={<Nav/>}></Route>*/}
-				{/*	<Route path="/ChessSite/goida" element={<Search/>}></Route>*/}
-				{/*</Routes>*/}
 				<Header />
 				<Routes>
 					<Route exact path="/" element={<HomePage />}></Route>
@@ -24,6 +18,7 @@ export default function App() {
 					<Route exact path="/learn" element={<LearnPage />}></Route>
 					<Route exact path="/history" element={<HistoryPage />}></Route>
 					<Route exact path="/user" element={<ProfilePage />}></Route>
+					<Route exact path="/game" element={<GamePage />}></Route>
 				</Routes>
 			</HashRouter>
 		</>
