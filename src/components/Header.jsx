@@ -1,4 +1,4 @@
-import '/src/adaptiv.js'
+import '/src/js/header.js'
 import './Header.css'
 import logo from '/src/icons/Logo.svg'
 import {Link, NavLink, } from 'react-router-dom';

@@ -8,6 +8,7 @@ import HistoryPage from "./pages/HistoryPage";
 import GamePage from "./pages/GamePage";
 import NotFound from "./pages/NotFound";
 
+
 export default function App() {
 	return (
 		<>

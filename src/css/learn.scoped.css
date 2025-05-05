@@ -6,7 +6,7 @@ main {
 .settings-sidebar {
   background-color: var(--background-dark-3);
   border-radius: 25px;
-  margin: 1.5vw 1vw 1.5vw 1.5vw;
+  margin: 1rem;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ main {
 }
 
 .settings-div {
-  margin: 1.5vw 1.5vw 1.5vw 1vw;
+  margin: 1rem;
   border-radius: 25px;
   opacity: 80%;
   background-color: var(--background-dark-3);

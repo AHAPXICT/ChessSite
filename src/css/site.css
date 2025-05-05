@@ -36,9 +36,7 @@ a:active {
 /*#region GameRightContainer*/
 .right-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 95%;
 }
 
 .pieces-container {
@@ -61,7 +59,6 @@ a:active {
 .right-game-container {
   background: var(--background-dark-3);
   border-radius: 20px;
-  margin: 1.5rem 0;
   border: 1px solid var(--white-text-1);
 }
 .right-header {
@@ -113,7 +110,7 @@ a:active {
 }
 .table-div {
   overflow-y: scroll;
-  height: 85px;
+  /*height: 85px;*/
 }
 .history-table th:not(:first-child) {
   text-align: left;
@@ -132,13 +129,16 @@ a:active {
   background: var(--background-gray-1);
   padding: 0 1rem;
 }
+.pieces-container {
+  margin: 10px 0;
+}
 
 /*BOARD*/
 .game-board {
-  margin: 50px;
-  width: 400px;
+  margin: 20px;
   border-radius: 20px;
   overflow: hidden;
+  justify-self: center;
 }
 .cell.white {
   background-color: white;
@@ -155,6 +155,9 @@ a:active {
   html {
     background-image: url("/src/img/BackgroundPiecesSmall.svg");
     font-size: 14px !important;
+  }
+  .game-board {
+    border-radius: 15px;
   }
 }
 
