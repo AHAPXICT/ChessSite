@@ -1,5 +1,5 @@
-let title;
-let menuContainer;
+let title = document.getElementById('left-menu-title');
+let menuContainer = document.querySelector('.left-find-menu');
 
 window.addEventListener('resize', function () {
 	if (window.innerWidth > 700) {

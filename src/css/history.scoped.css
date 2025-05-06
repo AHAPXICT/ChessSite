@@ -216,9 +216,6 @@
   .unselected-image {
     display: none;
   }
-  .unselected-game {
-    /*width: 330px;*/
-  }
   .left-find-menu {
     position: relative;
     top: unset;
@@ -247,10 +244,13 @@
     font-size: 1.2rem;
     user-select: none;
   }
-  .left-menu-title:hover {
-    cursor: pointer;
-    color: var(--main-hover-color-1);
+  @media (hover: hover) {
+    .left-menu-title:hover {
+      cursor: pointer;
+      color: var(--main-hover-color-1);
+    }
   }
+
   .left-find-menu select {
     margin-bottom: 5px;
   }

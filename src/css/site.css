@@ -147,6 +147,12 @@ a:active {
   background-color: #AAFF
 }
 
+@media (hover: hover) {
+  a:hover {
+    color: var(--main-hover-color-1);
+  }
+}
+
 @media (max-width: 1300px) {
 
 }
