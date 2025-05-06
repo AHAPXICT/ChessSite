@@ -86,19 +86,16 @@
   color: var(--gray-white);
 }
 
+.right-container {
+  align-self: center;
+}
+
 /*CENTER*/
 .center-container {
   display: flex;
   justify-content: center;
   border-radius: 20px;
 }
-.center-container > img {
-  border-radius: inherit;
-}
-
-/*RIGHT-SIDE*/
-/*IN site.css*/
-
 @media (max-width: 1300px) {
 
 }
