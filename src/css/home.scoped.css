@@ -82,6 +82,7 @@ main {
   width: 473px;
   height: calc(30px + 1.1vw);
   font-size: 1.6rem;
+  transition: 0.15s;
 }
 @media (hover: hover) {
   .button-container button:hover {
@@ -93,6 +94,13 @@ main {
   background-color: var(--main-color-1);
   color: var(--background-dark-2);
 }
+
+.button-container button > a {
+  color: inherit;
+  transition: color 0s;
+  display: block;
+}
+
 
 /*FOOTER*/
 .footer {
@@ -122,6 +130,7 @@ footer a {
     color: var(--blue-link-hover);
   }
 }
+
 
 .footer-list {
   display: flex;
